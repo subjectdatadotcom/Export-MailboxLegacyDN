@@ -6,7 +6,7 @@ This script connects to Exchange Online, reads email addresses from a predefined
 .EXAMPLE
 Simply run the script from its folder:
 .\Export-MailboxLegacyDN.ps1
-The script automatically reads email addresses from 'userslist.csv' in the same directory and exports mailbox data to 'Users_LEDN_Report.csv'.
+The script automatically reads email addresses from 'users.csv' in the same directory and exports mailbox data to 'Users_LEDN_Report.csv'.
 .NOTES
 Written by: SubjectData
 #>
@@ -28,7 +28,7 @@ $myDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 $XLloc = "$myDir\"
 #$ReportsPath = "$myDir\Outputs"
-$CSVPath = $XLloc + "userslist.csv"
+$CSVPath = $XLloc + "users.csv"
 
 # Authenticate to Exchange Online
 try {
