@@ -62,7 +62,8 @@ foreach ($email in $emailList) {
             UserPrincipalName, 
             ForwardingAddress, 
             ForwardingSMTPAddress, 
-            DeliverToMailboxAndForward
+            DeliverToMailboxAndForward,
+            ArchiveStatus
                     
         $mailboxData += $mailbox
 
